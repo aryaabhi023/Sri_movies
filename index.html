@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Sri Movies</title>
+    <link rel="stylesheet" href="css/css1.css" />
+    <link rel="stylesheet" href="css/spinner.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <div class="logo"><a href="/">Sri</a></div>
+        <nav>
+          <ul>
+            <li>
+              <a class="nav-link" href="/index.html">Movies</a>
+            </li>
+            <li>
+              <a class="nav-link" href="/shows.html">TV Shows</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- NOW PLAYING -->
+    <section class="now-playing">
+      <h2>Now Playing</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper"></div>
+      </div>
+    </section>
+
+    <!-- Search Movies -->
+    <section class="search">
+      <div class="container">
+        <div class="alert"></div>
+        <form action="search.html" class="search-form">
+          <!-- movies and show radio box -->
+          <div class="search-radio">
+            <input type="radio" id="movie" name="type" value="movie" checked />
+            <label for="movies">Movies</label>
+            <input type="radio" id="tv" name="type" value="tv" />
+            <label for="shows">TV Shows</label>
+          </div>
+          <div class="search-flex">
+            <input
+              type="text"
+              name="search-term"
+              id="search-term"
+              placeholder="Enter search term"
+            />
+            <button class="btn" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Popular Movie -->
+    <section class="container">
+      <h2>Popular Movies</h2>
+      <div id="popular-movies" class="grid"></div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="logo"><span>SRI</span></div>
+        <div class="social-links">
+          <a href="https://www.facebook.com" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://www.twitter.com" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="spinner"></div>
+  </body>
+</html>
