@@ -11,10 +11,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./lib/swiper.css" />
     <title>Sri Movies</title>
     <link rel="stylesheet" href="css/css1.css" />
     <link rel="stylesheet" href="css/spinner.css" />
     <script src="script.js" defer></script>
+    <script src="./lib/swiper.js"></script>
   </head>
   <body>
     <header class="main-header">
@@ -41,10 +43,11 @@
       </div>
     </section>
 
+    <div id="alert"></div>
+
     <!-- Search Movies -->
     <section class="search">
       <div class="container">
-        <div class="alert"></div>
         <form action="search.html" class="search-form">
           <!-- movies and show radio box -->
           <div class="search-radio">
@@ -58,7 +61,7 @@
               type="text"
               name="search-term"
               id="search-term"
-              placeholder="Enter search term"
+              placeholder="Search Movie and TV show"
             />
             <button class="btn" type="submit">
               <i class="fas fa-search"></i>
